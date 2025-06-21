@@ -1,50 +1,68 @@
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <title>TW Roofing Group LLC - Anchorage, Alaska</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        header img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .company-name {
+            font-size: 2em;
+            margin: 10px 0 5px 0;
+        }
+        .contact-info {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Roofer-Stock-Image.jpg" target="_blank">
+            <img src="Roofer-Stock-Image.jpg" alt="TW Roofing Group LLC - Roofer at work">
+        </a>
+        <div class="company-name">TW Roofing Group LLC</div>
+        <div class="contact-info">Anchorage, Alaska | Call us: (907) 903-4207</div>
+    </header>
+
+    <main>
+        <h2>Professional Roofing Services in Anchorage</h2>
+        <p>TW Roofing Group LLC is proud to serve Anchorage, Alaska with high-quality, reliable roofing solutions. Whether you need a roof inspection, repair, or a full replacement, our experienced team is here to help protect your home or business.</p>
+        <h3>Our Services</h3>
+        <ul>
+            <li>Residential & Commercial Roofing</li>
+            <li>Roof Repairs & Maintenance</li>
+            <li>New Roof Installation</li>
+            <li>Emergency Storm Damage Repairs</li>
+            <li>Free Estimates</li>
+        </ul>
+    </main>
+
+    <footer>
+        &copy; 2025 TW Roofing Group LLC. All rights reserved. | Anchorage, AK | (907) 903-4207
+    </footer>
+</body>
 </html>
